@@ -42,7 +42,15 @@ const questions = [
             {text: "Porot", correct: true},
             {text: "Koira ", correct:false}
         ]
+    },
+    {question:"Mitä lapset usein kirjoittavat ennen joulua?",
+        answers: [
+            {text: "Kirje joulupukille", correct: true},
+            {text: "Koulu testit", correct: false},
+            {text: "Viestit kavereille", correct:false}
+        ]
     },    
+   
 ]
 
 function showQuestionForDay(dayNumber) {
