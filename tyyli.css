@@ -137,3 +137,12 @@ padding: 20px; /*gap between the button container and the boarders of the page*/
     text-align: center;
     border: 5px solid #8b1e3f;
 }
+.snow-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* чтобы элементы под снегом оставались кликабельными */
+  z-index: 9999;
+}
