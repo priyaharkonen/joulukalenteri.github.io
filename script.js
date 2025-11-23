@@ -173,6 +173,67 @@ const questions = [
         ]
     },
 ]
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function getRandomQuestions(n) {
+    const shuffled = shuffleArray([...questions]); // копия массива
+    return shuffled.slice(0, n);
+}
+
+function showFinalTest() {
+    const testQuestions = getRandomQuestions(7);
+    let currentIndex = 0;
+    let correctCount = 0;
+
+    const questionElement = document.getElementById("question");
+    const buttonsDiv = document.getElementById("answer-buttons");
+    const vastausEl = document.getElementById("vastaus");
+    const backBtn = document.getElementById("back-btn");
+
+    function showQuestion(index) {
+        const q = testQuestions[index];
+        questionElement.textContent = `Kysymys ${index+1}/7: ${q.question}`;
+        buttonsDiv.innerHTML = "";
+        vastausEl.innerHTML = "";
+
+        q.answers.forEach(answer => {
+            const btn = document.createElement("button");
+            btn.textContent = answer.text;
+            btn.classList.add("btn", "answer-btn");
+            buttonsDiv.appendChild(btn);
+
+            btn.addEventListener("click", () => {
+                if(answer.correct){
+                    correctCount++;
+                }
+                // Переход к следующему вопросу
+                if(index < testQuestions.length - 1){
+                    showQuestion(index+1);
+                } else {
+                    // Все вопросы пройдены → показать результат
+                    buttonsDiv.innerHTML = "";
+                    if(correctCount >= 5){
+                        vastausEl.innerHTML = `🎉 Vastasit oikein ${correctCount}/7 → Testi läpäisty! Hyvää joulua!`;
+                        backBtn.textContent = "takaisin";
+                        backBtn.onclick = () => window.location.href="../index.html";
+                    } else {
+                        vastausEl.innerHTML = `❌ Vastasit oikein ${correctCount}/7 → Testi ei läpäisty, yritä uudestaan!`;
+                        backBtn.textContent = "Aloita uudestaan";
+                        backBtn.onclick = () => showFinalTest(); // перезапуск теста
+                    }
+                }
+            });
+        });
+    }
+
+    showQuestion(currentIndex);
+}
 
 function showQuestionForDay(dayNumber) {
     const questionElement = document.getElementById("question");

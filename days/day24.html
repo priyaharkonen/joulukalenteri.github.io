@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Päivä 24</title>
+    <title>Päivä 2</title>
     <link rel="stylesheet" href="../tyyli.css">
     <script src="https://kit.fontawesome.com/c5e42a7abd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="app">
-        <h1></h1>
-        <h2>Lopputentti</h2>
-        <p>teksti</p>
-        <div class="quiz">
+    <div class="app"> <div class="center-wrapper">
+        <h1 class="title-box">Lopputentti</h1>
+    </div> <div class="text-container">
+                <p>text.</p></div>
+        <div class="quiz-box">
+            <div class="question-container">
             <h2 id="question">Kysymys</h2>
             <p id="vastaus"></p>
-            <div id="answer-buttons">
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">4</button>
             </div>
-    <button id="back-btn" onclick="window.location.href='../index.html'">takaisin</button>
-        </div>
-    </div>
+            <div id="answer-buttons">  </div>
+            <div class="back-wrapper">
+           <button id="back-btn" onclick="window.location.href='../index.html'">takaisin</button> 
+           </div>
+    </div></div>
     <script src="../script.js"></script>
+    <script src="../snow.js" defer></script>
     <script>
-        showQuestionForDay(24); 
+        showFinalTest(); 
     </script>
 </body>
-</html>
 </html>
