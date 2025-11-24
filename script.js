@@ -182,7 +182,7 @@ function shuffleArray(array) {
 }
 
 function getRandomQuestions(n) {
-    const shuffled = shuffleArray([...questions]); // копия массива
+    const shuffled = shuffleArray([...questions]);
     return shuffled.slice(0, n);
 }
 
@@ -212,11 +212,11 @@ function showFinalTest() {
                 if(answer.correct){
                     correctCount++;
                 }
-                // Переход к следующему вопросу
+
                 if(index < testQuestions.length - 1){
                     showQuestion(index+1);
                 } else {
-                    // Все вопросы пройдены → показать результат
+ 
                     buttonsDiv.innerHTML = "";
                     if(correctCount >= 5){
                         vastausEl.innerHTML = `🎉 Vastasit oikein ${correctCount}/7 → Testi läpäisty! Hyvää joulua!`;
@@ -225,7 +225,7 @@ function showFinalTest() {
                     } else {
                         vastausEl.innerHTML = `❌ Vastasit oikein ${correctCount}/7 → Testi ei läpäisty, yritä uudestaan!`;
                         backBtn.textContent = "Aloita uudestaan";
-                        backBtn.onclick = () => showFinalTest(); // перезапуск теста
+                        backBtn.onclick = () => showFinalTest();
                     }
                 }
             });
@@ -274,5 +274,27 @@ function showQuestionForDay(dayNumber) {
     });
 }
 
+
+const leftTree = document.querySelector('.tree.leftTree');
+const rightTree = document.querySelector('.tree.rightTree');
+
+const leftClick = document.querySelector('.tree-click.leftTree');
+const rightClick = document.querySelector('.tree-click.rightTree');
+
+const lightsOff = "../images/treeLightsOf.png";
+const lightsOn = '../images/treeLightsOn.png';
+
+let leftOn = true;
+let rightOn = true;
+
+leftClick.addEventListener('click', () => {
+    leftTree.src = leftOn ? lightsOff : lightsOn;
+    leftOn = !leftOn;
+});
+
+rightClick.addEventListener('click', () => {
+    rightTree.src = rightOn ? lightsOff : lightsOn;
+    rightOn = !rightOn;
+});
 
 

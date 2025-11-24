@@ -143,6 +143,68 @@ padding: 20px; /*gap between the button container and the boarders of the page*/
   top: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* чтобы элементы под снегом оставались кликабельными */
+  pointer-events: none;
   z-index: 9999;
+}
+.tree {
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    z-index: -1;       
+    opacity: 0.9;
+}
+
+.leftTree { left: 0; }
+.rightTree { right: 0; }
+
+
+.tree-click {
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    height: 600px; 
+    cursor: pointer;
+    background: transparent;
+    z-index: 1;
+}
+
+.tree-click.leftTree { left: 0; }
+.tree-click.rightTree { right: 0; }
+
+.garland {
+    position: fixed;        
+    left: 0;
+    width: 100%;             
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;    
+    z-index: -1;            
+    gap: 10px;
+}
+
+.garland.top { top: 0; }  
+.garland.bottom { bottom: 0; }
+
+
+.garland span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    animation: blink 1.2s infinite alternate;
+}
+
+.garland span:nth-child(2) { background-color: yellow; animation-delay: 0.2s; }
+.garland span:nth-child(3) { background-color: green; animation-delay: 0.4s; }
+.garland span:nth-child(4) { background-color: blue; animation-delay: 0.6s; }
+.garland span:nth-child(5) { background-color: orange; animation-delay: 0.8s; }
+.garland span:nth-child(6) { background-color: yellow; animation-delay: 0.2s; }
+.garland span:nth-child(7) { background-color: green; animation-delay: 0.4s; }
+.garland span:nth-child(8) { background-color: blue; animation-delay: 0.6s; }
+.garland span:nth-child(9) { background-color: orange; animation-delay: 0.8s; }
+
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
 }
