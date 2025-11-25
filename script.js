@@ -72,7 +72,7 @@ const questions = [
             {text: "Etelä-Afrikka", correct:false}
         ]
     },  //10-3
-    {question:"Missä maassa lahjat jaetaan usein vasta loppiaisena, 6. tammikuuta, kolmen tietäjän kunniaksi",
+    {question:"Missä maassa lahjat jaetaan usein vasta Loppiaisena (6.1.) kolmen tietäjän kunniaksi",
         answers: [
             {text: "Norja", correct: false},
             {text: "Ranska", correct: false},
