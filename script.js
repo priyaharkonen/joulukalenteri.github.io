@@ -102,11 +102,11 @@ const questions = [
             {text: "Brasilia", correct: false}
         ]
     },//13-6
-    {question:"Missä maassa naimattomat naiset heittävät jouluaattona kengän olkansa yli ennustaakseen avioliittoa?",
+    {question:"Kuka oli vuoden 2024 Lucia-neito, Helsingissä järjestettävässä Lucia-kulkueessa?",
         answers: [
-            {text: "Slovakia", correct: false},
-            {text: "Unkari", correct: false},
-            {text: "Tšekki", correct: true}
+            {text: "Madeleine Amoroso", correct: false},
+            {text: "Wilma Grönqvist", correct: false},
+            {text: "Daniela Owusu", correct: true}
         ]
     }, //14-7
     {question:"Missä maassa joulun aikaan piilotetaan luudat, jotta noidat eivät pääse lentämään niillä?",
@@ -125,13 +125,13 @@ const questions = [
     }, //16-2
     {question:"Missä maassa joulupöytään kuuluu usein seitsemän erilaista kala-annosta? ",
         answers: [
-            {text: "Portugalli", correct: false},
+            {text: "Portugali", correct: false},
             {text: "Italia", correct: true},
             {text: "Ranska", correct: false}
         ]
     },//17-3
 
- {question:"Missä maassa jouluruokaan kuuluu usein “hallaca” – maissitaikinasta tehty täytetty nyytti, joka kääritään banaaninlehteen?",
+ {question:"Missä maassa jouluruokaan kuuluu usein “hallaca” eli maissitaikinasta tehty täytetty nyytti, joka kääritään banaaninlehteen?",
         answers: [
             {text: "Venezuela", correct: true},
             {text: "Kolumbia", correct: false},
@@ -167,18 +167,18 @@ const questions = [
             {text: "Joulutorttu", correct: true}
         ]
     },//22-1
-     {question:"Minkä niminen hahmo ilmestyy ruotsalaisessa Lucia-juhlassa kynttiläkruunu päässään ja tuo valoa pimeyteen? ",
-        answers: [
-            {text: "Lucia-neito", correct: true},
-            {text: "Valonhaltija", correct: false},
-            {text: "Talvikeiju", correct: false}
-        ]
-    },//23-2
      {question:"Minkä niminen hahmo esiintyy hollantilaisessa jouluperinteessä ja saapuu laivalla Espanjasta tuomaan lahjoja? ",
         answers: [
-            {text: "Sinterklaas", correct: false},
-            {text: "Pietari Pyhä", correct: true},
+            {text: "Sinterklaas", correct: true},
+            {text: "Pietari Pyhä", correct: false},
             {text: "Nikolaus Mereltä", correct: false}
+        ]
+    },//23-2
+     {question:"Minkä niminen hahmo esiintyy vanhoissa suomalaisissa tarinoissa ja asuu metsän keskellä, joskus yhdistettynä joulupukkiin?",
+        answers: [
+            {text: "Tapio", correct: true},
+            {text: "Ukko", correct: false},
+            {text: "Metsänhsltija", correct: false}
         ]
     },
 ]
