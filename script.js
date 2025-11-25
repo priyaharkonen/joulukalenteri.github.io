@@ -298,12 +298,14 @@ const lightsOn = '../images/treeLightsOn.png';
 let leftOn = true;
 let rightOn = true;
 
-leftClick.addEventListener('click', () => {
-    leftTree.src = leftOn ? lightsOff : lightsOn;
-    leftOn = !leftOn;
-});
+if (leftClick && rightClick && leftTree && rightTree) {
+    leftClick.addEventListener('click', () => {
+        leftTree.src = leftOn ? lightsOff : lightsOn;
+        leftOn = !leftOn;
+    });
 
-rightClick.addEventListener('click', () => {
-    rightTree.src = rightOn ? lightsOff : lightsOn;
-    rightOn = !rightOn;
-}); 
+    rightClick.addEventListener('click', () => {
+        rightTree.src = rightOn ? lightsOff : lightsOn;
+        rightOn = !rightOn;
+    }); 
+}
