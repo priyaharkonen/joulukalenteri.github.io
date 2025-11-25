@@ -1,23 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     const now = new Date();
-    const today = (now.getMonth() === 11) ? now.getDate() : 0;
+//    const today = (now.getMonth() === 11) ? now.getDate() : 0;
+    const today = 24; //TEST MODE
     const dayButtons = document.querySelectorAll('.dayBox');
     dayButtons.forEach(button => {
         const buttonDay = parseInt(button.getAttribute("data-day"));
         
         if (buttonDay > today) {
-            button.classList.add("disabled-day");
             button.disabled = true;
-            return;
+            return; //no click event
         }
+        //Enable clicking on unlocked days
         button.addEventListener("click", () => {
-            showQuestionForDay(buttonDay);
+            showQuestionForDay(buttonDay);  
         });
     });
-});
+});        
 
-const questions = [
-    //1
+            const questions = [
+  
     {question:"Mitä joulu alun perin juhlistaa?",
         answers: [
             {text:"Kevään tuloa", correct: false},
@@ -305,4 +306,4 @@ leftClick.addEventListener('click', () => {
 rightClick.addEventListener('click', () => {
     rightTree.src = rightOn ? lightsOff : lightsOn;
     rightOn = !rightOn;
-});
+}); 
