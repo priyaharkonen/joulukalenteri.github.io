@@ -33,8 +33,12 @@ height: 100px;
 justify-content: center;
 }
 .dayBox:hover {
- background-color: #d27585;   
-  }
+ background-color: #d27585;  
+}
+.dayBox:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
 
 .calendar {
