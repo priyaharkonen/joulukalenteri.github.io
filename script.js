@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     const now = new Date();
-    const today = (now.getMonth() === 11) ? now.getDate() : 0;
+    const today = (now.getMonth() === 11) ? now.getDate() : 0; 
     const dayButtons = document.querySelectorAll('.dayBox');
-
     dayButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const buttonDay = parseInt(button.getAttribute("data-day"));
-            if (buttonDay > today) {
-                button.disabled = true;
-            }
+        const buttonDay = parseInt(button.getAttribute("data-day"));
+        
+        if (buttonDay > today) {
+            button.classList.add("disabled-day");
+            button.disabled = true;
+            return;
+        }
+        button.addEventListener("click", () => {
+            showQuestionForDay(buttonDay);
         });
-    }); 
-
-});  
-
+    });
+});
 
 const questions = [
     //1
