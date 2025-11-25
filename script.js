@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const now = new Date();
-    const today = (now.getMonth() === 11) ? now.getDate() : 0; 
+    const today = (now.getMonth() === 11) ? now.getDate() : 0;
     const dayButtons = document.querySelectorAll('.dayBox');
     dayButtons.forEach(button => {
         const buttonDay = parseInt(button.getAttribute("data-day"));
