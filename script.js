@@ -79,11 +79,11 @@ const questions = [
             {text: "Espanja", correct:true}
         ]
     }, //11-4
-    {question:"Missä maassa jouluaattoa vietetään 24. joulukuuta ja perinteisiin kuuluu haudoilla käynti?",
+    {question:"Mikä ohjelma lähetetään Ruotsissa klo 15 jouluaattona?",
         answers: [
-            {text: "Suomi", correct: true},
-            {text: "Ranska", correct: false},
-            {text: "Espanja", correct: false}
+            {text: "ABBA-dokumentti", correct: false},
+            {text: "Disney-hahmojen lastenohjelma ”Kalle Anka”", correct: true},
+            {text: "”Peppi pelastaa joulun” -animaatio (alkup.nim.”Pippi räddar julen”)", correct: false}
         ]
     }, //12-5
      {question:"Missä maassa juhlitaan Las Posadas -perinnettä, jossa kuljetaan ovelta ovelle kuin Maria ja Joosef? ",
