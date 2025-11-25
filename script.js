@@ -153,11 +153,11 @@ const questions = [
             {text: "Italia", correct: true}
         ]
     },//20-6
-     {question:"Missä maassa joulupöydän klassikko on joulukinkku, laatikot ja riisipuuro? ",
+     {question:"Minkä seuraavista voit löytää vielä suomalaisesta joulupöydästä?",
         answers: [
-            {text: "Ruotsi", correct: false},
-            {text: "Suomi", correct: true},
-            {text: "Tanska", correct: false}
+            {text: "Janssoninkiusaus", correct: false},
+            {text: "Rosolli", correct: true},
+            {text: "Yorkshire pudding", correct: false}
         ]
     },//21-7
      {question:"Mikä on suomalainen makea, hedelmäinen leivonnainen, jota nautitaan usein joulun aikaan?",
