@@ -43,11 +43,11 @@ const questions = [
             {text: "Koira ", correct:false}
         ]
     },//6
-    {question:"Mitä lapset usein kirjoittavat ennen joulua?",
+    {question:"Minä vuonna Suomi itsenäistyi?",
         answers: [
-            {text: "Kirje joulupukille", correct: true},
-            {text: "Koulu testit", correct: false},
-            {text: "Viestit kavereille", correct:false}
+            {text: "1901", correct: false},
+            {text: "1947", correct: false},
+            {text: "1917", correct: true}
         ]
     }, //7   
      {question:"Mikä on joulukalenterin tarkoitus?",
