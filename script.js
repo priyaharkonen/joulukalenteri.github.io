@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         //Enable clicking on unlocked days
         button.addEventListener("click", () => {
-            showQuestionForDay(buttonDay);  
+            window.location.href = `days/day${buttonDay}.html`;  
         });
     });
 });        
