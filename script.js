@@ -160,11 +160,11 @@ const questions = [
             {text: "Yorkshire pudding", correct: false}
         ]
     },//21-7
-     {question:"Mikä on suomalainen makea, hedelmäinen leivonnainen, jota nautitaan usein joulun aikaan?",
+     {question:"Mikä on suomalainenKuinka monikulmainen on perinteinen joulutortun tähti makea, hedelmäinen leivonnainen, jota nautitaan usein joulun aikaan?",
         answers: [
-            {text: "Joulutähti", correct: false},
-            {text: "Korvapuusti", correct: false},
-            {text: "Joulutorttu", correct: true}
+            {text: "Nelikulmainen", correct: true},
+            {text: "Viisikulmainen", correct: false},
+            {text: "Kuusikulmainen", correct: false}
         ]
     },//22-1
      {question:"Minkä niminen hahmo esiintyy hollantilaisessa jouluperinteessä ja saapuu laivalla Espanjasta tuomaan lahjoja? ",
