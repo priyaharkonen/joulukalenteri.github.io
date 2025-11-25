@@ -1,10 +1,15 @@
-const buttons = document.querySelectorAll('.dayBox');
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const day = button.dataset.day;
-        window.location.href = `days/day${day}.html`;
-    });
-});
+document.addEventListener();
+    const today = new Date().getDate();
+    const dayButtons = document.querySelectorAll('.dayBox');
+        dayButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const buttonDay = parseInt(button.getAttribute("data-day"));
+                if (buttonDay > today) {
+                     button.disabled = true;
+            }
+        });
+    })    
+
 
 const questions = [
     //1
@@ -296,5 +301,3 @@ rightClick.addEventListener('click', () => {
     rightTree.src = rightOn ? lightsOff : lightsOn;
     rightOn = !rightOn;
 });
-
-
