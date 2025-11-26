@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
             {text: "Yorkshire pudding", correct: false}
         ]
     },//21-7
-     {question:"Mikä on suomalainenKuinka monikulmainen on perinteinen joulutortun tähti makea, hedelmäinen leivonnainen, jota nautitaan usein joulun aikaan?",
+     {question:"Kuinka monikulmainen on perinteinen joulutortun tähti makea, hedelmäinen leivonnainen, jota nautitaan usein joulun aikaan?",
         answers: [
             {text: "Nelikulmainen", correct: true},
             {text: "Viisikulmainen", correct: false},
