@@ -1,11 +1,11 @@
     // --- MODE SWITCH ---
-    // Switch to actual mode by removing "/*" & "*/" and comment out line 9 
+    // Switch to actual mode by removing "//" from line 6 and add "//" to line 9 
 document.addEventListener("DOMContentLoaded", () => {
     const now = new Date();
     // --- ACTUAL MODE  ---
-    /*const today = (now.getMonth() === 11) ? now.getDate() : 0;*/ 
+    //const today = (now.getMonth() === 11) ? now.getDate() : 0;
     // --- DEMO MODE ---
-    const today = 24;  
+    //const today = 24;  
     const dayButtons = document.querySelectorAll('.dayBox');
     dayButtons.forEach(button => {
         const buttonDay = parseInt(button.getAttribute("data-day"));
